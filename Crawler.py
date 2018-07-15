@@ -1,6 +1,10 @@
+# 找出照片板块
+
 soup = BeautifulSoup(driver.page_source, 'lxml')
 cons_li_list = soup.select('.cons_li')
 
+
+#每一位MM的信息
 # 昵称
 name = cons_li.select('.item_name')[0].get_text()
 # 照片链接
